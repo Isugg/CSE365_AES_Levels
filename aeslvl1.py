@@ -1,6 +1,9 @@
 import pwn #library for exploit tools
 import glob #library used to locate our challenge file
 
+print("Don't just copy paste the code!")
+exit(0)
+
 pwn.context.log_level = "WARN" #tell pwn tools to only report important stuff
 
 proc = pwn.process(glob.glob("/challenge/bab*")[0]) #start a pwntools process and use global library to locate file
